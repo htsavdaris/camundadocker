@@ -1,0 +1,180 @@
+2023-06-09T00:14:03.909+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=emp1, password=emp1)
+2023-06-09T00:14:03.910+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T00:14:03.910+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: Login emp1
+2023-06-09T00:14:03.911+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: Password emp1
+2023-06-09T00:14:03.918+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=emp1, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T00:14:04.131+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: User emp1
+2023-06-09T00:14:04.133+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: jwtToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjU4ODQ0LCJleHAiOjE2ODYzNDUyNDR9.FmScVn6QzslmEFGKj3DJWDFv63FcZzRb-dHrPHrl8DE
+2023-06-09T00:14:04.134+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjU4ODQ0LCJleHAiOjE2ODYzNDUyNDR9.FmScVn6QzslmEFGKj3DJWDFv63FcZzRb-dHrPHrl8DE
+2023-06-09T00:14:04.141+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken 
+2023-06-09T00:32:05.036+03:00  INFO 14380 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-09T00:32:05.044+03:00  INFO 14380 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-09T00:32:05.045+03:00  INFO 14380 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-09T00:32:05.047+03:00  WARN 14380 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2023-06-09T00:32:05.057+03:00  INFO 14380 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-09T00:32:05.062+03:00  INFO 14380 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-09T00:32:05.065+03:00  INFO 14380 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-09T00:32:05.155+03:00  INFO 14380 --- [restartedMain] c.e.c.CamundadockerApplication           : Starting CamundadockerApplication using Java 17.0.6 with PID 14380 (J:\01_MYDOCS\03_InternalDevelopment\32_Approval_Camunda\camundadocker\camundadocker\target\classes started by htsav in J:\01_MYDOCS\03_InternalDevelopment\32_Approval_Camunda\camundadocker\camundadocker)
+2023-06-09T00:32:05.156+03:00  INFO 14380 --- [restartedMain] c.e.c.CamundadockerApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-06-09T00:32:05.316+03:00  INFO 14380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-09T00:32:05.330+03:00  INFO 14380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-06-09T00:32:05.423+03:00  INFO 14380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-06-09T00:32:05.423+03:00  INFO 14380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-09T00:32:05.426+03:00  INFO 14380 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-06-09T00:32:05.440+03:00  INFO 14380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-09T00:32:05.441+03:00  INFO 14380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 281 ms
+2023-06-09T00:32:05.487+03:00  INFO 14380 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-09T00:32:05.492+03:00  INFO 14380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-06-09T00:32:05.520+03:00  INFO 14380 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@32fcf3a8
+2023-06-09T00:32:05.521+03:00  INFO 14380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-06-09T00:32:05.530+03:00  INFO 14380 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09T00:32:05.574+03:00  INFO 14380 --- [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.example.camundadocker.model.Token (class must be instantiated by Interceptor)
+2023-06-09T00:32:05.578+03:00  INFO 14380 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-09T00:32:05.578+03:00  INFO 14380 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-09T00:32:05.648+03:00  INFO 14380 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static methods: public static void com.example.camundadocker.CamundadockerApplication.main(java.lang.String[])
+2023-06-09T00:32:05.679+03:00  WARN 14380 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-09T00:32:05.751+03:00  INFO 14380 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52955a26, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72a6cc38, org.springframework.security.web.context.SecurityContextHolderFilter@453d7840, org.springframework.security.web.header.HeaderWriterFilter@75a10c1f, org.springframework.security.web.authentication.logout.LogoutFilter@4cad97c3, com.example.camundadocker.service.JwtAuthenticationFilter@1e890425, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cb04a02, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@518c7a7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@99e5536, org.springframework.security.web.session.SessionManagementFilter@5b7d07c5, org.springframework.security.web.access.ExceptionTranslationFilter@41d5063b, org.springframework.security.web.access.intercept.AuthorizationFilter@500ee5af]
+2023-06-09T00:32:05.793+03:00  INFO 14380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-09T00:32:05.803+03:00  INFO 14380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-09T00:32:05.806+03:00  INFO 14380 --- [restartedMain] c.e.c.CamundadockerApplication           : Started CamundadockerApplication in 0.671 seconds (process running for 2170.836)
+2023-06-09T00:32:05.809+03:00  INFO 14380 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-09T00:32:17.767+03:00  INFO 14380 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-09T00:32:17.767+03:00  INFO 14380 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-09T00:32:17.768+03:00  INFO 14380 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-09T00:47:14.422+03:00  INFO 14380 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-09T00:47:14.430+03:00  INFO 14380 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-09T00:47:14.432+03:00  INFO 14380 --- [Thread-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-09T00:47:14.434+03:00  WARN 14380 --- [Thread-7] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2023-06-09T00:47:14.437+03:00  INFO 14380 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-09T00:47:14.438+03:00  INFO 14380 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-06-09T00:47:14.442+03:00  INFO 14380 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-06-09T00:47:14.529+03:00  INFO 14380 --- [restartedMain] c.e.c.CamundadockerApplication           : Starting CamundadockerApplication using Java 17.0.6 with PID 14380 (J:\01_MYDOCS\03_InternalDevelopment\32_Approval_Camunda\camundadocker\camundadocker\target\classes started by htsav in J:\01_MYDOCS\03_InternalDevelopment\32_Approval_Camunda\camundadocker\camundadocker)
+2023-06-09T00:47:14.530+03:00  INFO 14380 --- [restartedMain] c.e.c.CamundadockerApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-06-09T00:47:14.646+03:00  INFO 14380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-09T00:47:14.659+03:00  INFO 14380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2023-06-09T00:47:14.735+03:00  INFO 14380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-06-09T00:47:14.736+03:00  INFO 14380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-09T00:47:14.736+03:00  INFO 14380 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-06-09T00:47:14.747+03:00  INFO 14380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-09T00:47:14.748+03:00  INFO 14380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 215 ms
+2023-06-09T00:47:14.783+03:00  INFO 14380 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-09T00:47:14.788+03:00  INFO 14380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-06-09T00:47:14.818+03:00  INFO 14380 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@5f323afa
+2023-06-09T00:47:14.818+03:00  INFO 14380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-06-09T00:47:14.829+03:00  INFO 14380 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09T00:47:14.873+03:00  INFO 14380 --- [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.example.camundadocker.model.Token (class must be instantiated by Interceptor)
+2023-06-09T00:47:14.876+03:00  INFO 14380 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-09T00:47:14.877+03:00  INFO 14380 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-09T00:47:14.929+03:00  INFO 14380 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static methods: public static void com.example.camundadocker.CamundadockerApplication.main(java.lang.String[])
+2023-06-09T00:47:14.950+03:00  WARN 14380 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-09T00:47:14.996+03:00  INFO 14380 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66335526, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b27836a, org.springframework.security.web.context.SecurityContextHolderFilter@4a601b28, org.springframework.security.web.header.HeaderWriterFilter@77210e98, org.springframework.security.web.authentication.logout.LogoutFilter@5d31b59, com.example.camundadocker.service.JwtAuthenticationFilter@4575b1eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55737406, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ad9e5fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4433333b, org.springframework.security.web.session.SessionManagementFilter@38bba4e7, org.springframework.security.web.access.ExceptionTranslationFilter@5e583a98, org.springframework.security.web.access.intercept.AuthorizationFilter@2e5d7633]
+2023-06-09T00:47:15.025+03:00  INFO 14380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-09T00:47:15.029+03:00  INFO 14380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-09T00:47:15.033+03:00  INFO 14380 --- [restartedMain] c.e.c.CamundadockerApplication           : Started CamundadockerApplication in 0.519 seconds (process running for 3080.063)
+2023-06-09T00:47:15.035+03:00  INFO 14380 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-09T00:47:22.693+03:00  INFO 14380 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-09T00:47:22.693+03:00  INFO 14380 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-09T00:47:22.694+03:00  INFO 14380 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-09T00:47:22.704+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=, password=)
+2023-06-09T00:47:22.704+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T00:47:22.704+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService: Login 
+2023-06-09T00:47:22.705+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService: Password 
+2023-06-09T00:47:22.705+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T00:48:14.910+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=, password=)
+2023-06-09T00:48:14.911+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T00:48:14.911+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: Login 
+2023-06-09T00:48:14.911+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: Password 
+2023-06-09T00:48:14.912+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T00:51:55.453+03:00  WARN 14380 --- [http-nio-8081-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('l' (code 108)): was expecting double-quote to start field name]
+2023-06-09T00:54:18.184+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=, password=)
+2023-06-09T00:54:18.184+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T00:54:18.184+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: Login 
+2023-06-09T00:54:18.184+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: Password 
+2023-06-09T00:54:18.185+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T01:04:03.081+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=, password=)
+2023-06-09T01:04:03.081+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T01:04:03.081+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService: Login 
+2023-06-09T01:04:03.081+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService: Password 
+2023-06-09T01:04:03.081+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T01:07:29.736+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=emp1, password=emp1)
+2023-06-09T01:07:29.737+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T01:07:29.737+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService: Login emp1
+2023-06-09T01:07:29.737+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService: Password emp1
+2023-06-09T01:07:29.737+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=emp1, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T01:07:29.941+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService: User emp1
+2023-06-09T01:07:29.947+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService: jwtToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjYyMDQ5LCJleHAiOjE2ODYzNDg0NDl9.xhojUS8GoSUs1Ob5p4BlxW_uauMfOpEGav2HkUtKzkg
+2023-06-09T01:07:29.948+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjYyMDQ5LCJleHAiOjE2ODYzNDg0NDl9.xhojUS8GoSUs1Ob5p4BlxW_uauMfOpEGav2HkUtKzkg
+2023-06-09T01:07:29.957+03:00  INFO 14380 --- [http-nio-8081-exec-2] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken 
+2023-06-09T01:07:42.962+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=emp1, password=emp1)
+2023-06-09T01:07:42.962+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T01:07:42.962+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: Login emp1
+2023-06-09T01:07:42.963+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: Password emp1
+2023-06-09T01:07:42.963+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=emp1, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T01:07:43.174+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: User emp1
+2023-06-09T01:07:43.178+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: jwtToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjYyMDYzLCJleHAiOjE2ODYzNDg0NjN9.uTb9NZydRVHImtOYLXijtiV4c-sAusf7iidy8St0P6E
+2023-06-09T01:07:43.178+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjYyMDYzLCJleHAiOjE2ODYzNDg0NjN9.uTb9NZydRVHImtOYLXijtiV4c-sAusf7iidy8St0P6E
+2023-06-09T01:07:43.185+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken 
+2023-06-09T01:08:07.777+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=emp1, password=emp1)
+2023-06-09T01:08:07.778+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T01:08:07.778+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService: Login emp1
+2023-06-09T01:08:07.778+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService: Password emp1
+2023-06-09T01:08:07.778+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=emp1, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T01:08:07.981+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService: User emp1
+2023-06-09T01:08:07.981+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService: jwtToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjYyMDg3LCJleHAiOjE2ODYzNDg0ODd9.rZir6noBsKX28zmGmfjImrI3f_Lat5VBKsrmR067gdM
+2023-06-09T01:08:07.987+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjYyMDg3LCJleHAiOjE2ODYzNDg0ODd9.rZir6noBsKX28zmGmfjImrI3f_Lat5VBKsrmR067gdM
+2023-06-09T01:08:07.994+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken 
+2023-06-09T01:20:20.973+03:00  INFO 14380 --- [http-nio-8081-exec-7] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=emp1, password=emp1)
+2023-06-09T01:20:20.973+03:00  INFO 14380 --- [http-nio-8081-exec-7] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T01:20:20.974+03:00  INFO 14380 --- [http-nio-8081-exec-7] c.e.c.service.AuthenticationService      : AuthenticationService: Login emp1
+2023-06-09T01:20:20.974+03:00  INFO 14380 --- [http-nio-8081-exec-7] c.e.c.service.AuthenticationService      : AuthenticationService: Password emp1
+2023-06-09T01:20:20.974+03:00  INFO 14380 --- [http-nio-8081-exec-7] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=emp1, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T01:20:21.187+03:00  INFO 14380 --- [http-nio-8081-exec-7] c.e.c.service.AuthenticationService      : AuthenticationService: User emp1
+2023-06-09T01:20:21.191+03:00  INFO 14380 --- [http-nio-8081-exec-7] c.e.c.service.AuthenticationService      : AuthenticationService: jwtToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjYyODIxLCJleHAiOjE2ODYzNDkyMjF9.GToBPN2jhzomJqPSmB3-281xs94C_EfAei-NC8tI7Bc
+2023-06-09T01:20:21.192+03:00  INFO 14380 --- [http-nio-8081-exec-7] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjYyODIxLCJleHAiOjE2ODYzNDkyMjF9.GToBPN2jhzomJqPSmB3-281xs94C_EfAei-NC8tI7Bc
+2023-06-09T01:20:21.199+03:00  INFO 14380 --- [http-nio-8081-exec-7] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken 
+2023-06-09T01:20:53.125+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=emp1, password=emp1)
+2023-06-09T01:20:53.126+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T01:20:53.126+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: Login emp1
+2023-06-09T01:20:53.126+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: Password emp1
+2023-06-09T01:20:53.126+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=emp1, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T01:20:53.339+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: User emp1
+2023-06-09T01:20:53.340+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: jwtToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjYyODUzLCJleHAiOjE2ODYzNDkyNTN9.kvajYE9_4YzT3rNabKNVZq5Lw3W-HhXTRWr7A-G3AKo
+2023-06-09T01:20:53.341+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjYyODUzLCJleHAiOjE2ODYzNDkyNTN9.kvajYE9_4YzT3rNabKNVZq5Lw3W-HhXTRWr7A-G3AKo
+2023-06-09T01:20:53.348+03:00  INFO 14380 --- [http-nio-8081-exec-8] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken 
+2023-06-09T01:45:39.531+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=emp1, password=emp1)
+2023-06-09T01:45:39.531+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T01:45:39.532+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService: Login emp1
+2023-06-09T01:45:39.532+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService: Password emp1
+2023-06-09T01:45:39.532+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=emp1, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T01:45:39.734+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService: User emp1
+2023-06-09T01:45:39.742+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService: jwtToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjY0MzM5LCJleHAiOjE2ODYzNTA3Mzl9.yHh2A6Ib6yCJEQH4QipoNaKPgDsHl9UjkUdWd_JJw5o
+2023-06-09T01:45:39.744+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbXAxIiwiaWF0IjoxNjg2MjY0MzM5LCJleHAiOjE2ODYzNTA3Mzl9.yHh2A6Ib6yCJEQH4QipoNaKPgDsHl9UjkUdWd_JJw5o
+2023-06-09T01:45:39.751+03:00  INFO 14380 --- [http-nio-8081-exec-5] c.e.c.service.AuthenticationService      : AuthenticationService: saveUserToken 
+2023-06-09T02:49:38.212+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=<script>alert("hacked);</script>, password=emp1)
+2023-06-09T02:49:38.213+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T02:49:38.213+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: Login <script>alert("hacked);</script>
+2023-06-09T02:49:38.213+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: Password emp1
+2023-06-09T02:49:38.214+03:00  INFO 14380 --- [http-nio-8081-exec-3] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=<script>alert("hacked);</script>, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-06-09T02:49:55.386+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.controller.AuthController          : OAuth Controller: Authenticate post :AuthenticationRequest(login=<script>alert("hacked);</script>, password=emp1)
+2023-06-09T02:49:55.386+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService : authenticate is called
+2023-06-09T02:49:55.387+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService: Login <script>alert("hacked);</script>
+2023-06-09T02:49:55.387+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService: Password emp1
+2023-06-09T02:49:55.387+03:00  INFO 14380 --- [http-nio-8081-exec-9] c.e.c.service.AuthenticationService      : AuthenticationService: Token UsernamePasswordAuthenticationToken [Principal=<script>alert("hacked);</script>, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
